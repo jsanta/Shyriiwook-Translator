@@ -14,7 +14,10 @@ const routes: Routes = [
   {
     path: 'list',
     loadChildren: './list/list.module#ListPageModule'
-  }
+  },
+  { path: 'splash', loadChildren: './splash/splash.module#SplashPageModule' },
+  { path: 'config', loadChildren: './config/config.module#ConfigPageModule' },
+  { path: 'translate', loadChildren: './translate/translate.module#TranslatePageModule' }
 ];
 
 @NgModule({

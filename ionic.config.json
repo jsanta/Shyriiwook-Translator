@@ -1,5 +1,7 @@
 {
   "name": "Shiriwook-Translator",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

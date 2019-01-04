@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>
+          Translate
+        </ion-title>
+      </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-item>
+        <ion-label position="stacked">Text to translate</ion-label>
+        <ion-textarea
+        rows="6" cols="20" placeholder="Enter text to translate to Shiriwook..."
+        [ngModel]="originalText | shyriiwook: chewie"  (ngModelChange)="originalText=$event"
+        >
+        </ion-textarea>
+      </ion-item>
+
+      <ion-button expand="full" color="warning" (click)="translate()">Translate</ion-button>
+      <ion-button fill="outline" expand="block" color="warning" (click)="growl()">Pronunciation reference</ion-button>
+
+
+</ion-content>

@@ -1,0 +1,27 @@
+:host {
+
+    height: 100%;
+    overflow: hidden;
+
+    ion-content {
+        background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%)!important;
+    }
+
+    .vertical-align-content > * {
+        display: flex;
+        align-content: center;
+        align-items: center;
+    }
+
+    ion-grid {
+        height: 100%;
+        ion-row, ion-col {
+            width: 100%;
+        }
+    }
+
+    ion-button {
+        font-weight: bold;
+        text-shadow: 2px 1px 1px rgba(0,0,0,0.3);
+    }
+}

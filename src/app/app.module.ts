@@ -1,3 +1,4 @@
+import { SpeechApiService } from './services/speech-api.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
@@ -8,6 +9,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ShyriiwookPipe } from './pipes/shyriiwook.pipe';
 
 @NgModule({
   declarations: [AppComponent],
@@ -20,7 +22,8 @@ import { AppRoutingModule } from './app-routing.module';
   providers: [
     StatusBar,
     SplashScreen,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+    SpeechApiService
   ],
   bootstrap: [AppComponent]
 })
