@@ -49,8 +49,8 @@ export class SpeechApiService {
     const msg: any = new SpeechSynthesisUtterance();
 
     msg.voice = voice;
-    msg.rate  = rate / 100;
-    msg.pitch = pitch / 100;
+    msg.rate  = rate / 10;
+    msg.pitch = pitch / 10;
     msg.text  = txtMsg;
 
     msg.onend = e => {
