@@ -1,5 +1,5 @@
 {
-  "index": "/chewie/index.html",
+  "index": "/index.html",
   "assetGroups": [
     {
       "name": "app",
@@ -20,6 +20,15 @@
       "resources": {
         "files": [
           "/chewie/assets/**"
+        ]
+      }
+    },
+    {
+      "name": "fonts",
+      "resources": {
+        "urls": [
+          "https://fonts.googleapis.com/**",
+          "https://fonts.gstatic.com/**"
         ]
       }
     }
