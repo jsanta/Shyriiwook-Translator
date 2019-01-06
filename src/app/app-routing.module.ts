@@ -4,8 +4,9 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'splash',
-    pathMatch: 'full'
+    loadChildren: './splash/splash.module#SplashPageModule'
+    // redirectTo: 'splash',
+    // pathMatch: 'full'
   },
   {
     path: 'home',
