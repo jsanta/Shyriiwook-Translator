@@ -1,0 +1,11 @@
+:host {
+    ion-content {
+        --background: url(/assets/img/rebels.png) no-repeat right -70px bottom -50px;
+        background-color: var(--ion-color-dark);
+    }
+    p.hint {
+        color: var(--ion-color-warning);
+        text-align: center;
+    }
+}
+
