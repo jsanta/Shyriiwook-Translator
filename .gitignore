@@ -34,3 +34,8 @@ Thumbs.db
 UserInterfaceState.xcuserstate
 
 package-lock.json
+resources/ios/
+resources/android/
+extras/favicon_package_v0.16*/
+extras/splashscreens*/
+chewie/
