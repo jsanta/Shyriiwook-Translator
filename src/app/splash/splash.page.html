@@ -1,4 +1,37 @@
-<ion-content padding class="vertical-align-content" color="stars">
+<ion-content padding color="stars">
+
+
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+
+  <p id="start">Just a while ago, in a phone app not so far away&hellip;</p>
+
+  <!-- <h1>STAR WARS<sub>titles in CSS3</sub></h1> -->
+  <img src="assets/img/shyriiwook.png" class="logo" alt="Shyriiwook translator">
+
+  <div id="titles">
+    <div id="titlecontent">
+
+      <p class="center">Chewbacca<br />THE SPIN-OFF THAT SHOULD HAVE BEEN</p>
+
+      <p>Running 2015's first half, there was an announce on the Ionic Frameworks blog: The Ionic Jedi Hackster Hackathon.</p>
+      <p>Competing developers should build a Ionic App using the StarWars API, and Ionic (version 2 or later). I decided to
+        play that game, and give me that required impulse to drive myself into learning Ionic and Typescript. Coming from an AngularJS
+        background it didn't seem an easy task.</p>
+      <p>I coded day and night, for 2 days, the SW-Jokes app, a curated list of Star Wars jokes (some of them kind of funny). Got the
+        5th place, some stickers, a pen, a T-Shirt (I love that T-Shirt), a bottle opener.</p>
+      <p>Anyway, the app was incomplete. It required some extras not present in the original competition code. One of these extras was
+        the Shryriiwook translation pipe. Searched in github for something similar to the wookie mode translation in the Star Wars API,
+        and found some Ruby code.</p>
+      <p>I ended translating the Ruby code to an Angular pipe, that does the job. It's just a plain letter to pair of letters replacement,
+        but most Shyriiwook translated text reads as Chewie's growls. But this was still incomplete. Some future features should include
+        the capability of reading the jokes outloud.</p>
+      <p>Today I'm coding using Ionic 4, and distributing the app as a PWA (wrote a nice article on this).</p>
+      <p>Try it out, choose a male voice and set it with a low rate and pitch to achieve growling voices.</p>
+
+    </div>
+  </div>
 
   <ion-grid>
     <ion-row>
@@ -8,4 +41,10 @@
     </ion-row>
   </ion-grid>
 
+  <button *ngIf="showButton" type="button" class="ad2hs-prompt" (click)="addToHomeScreen()">Install Web App</button>
+  <div *ngIf="showIosBanner" class="ios-prompt" (click)="showIosBanner = false">
+    <span style="color: rgb(187, 187, 187); float: right; margin-top: -14px; margin-right: -11px;">&times;</span>
+    <img src="assets/img/add2home.svg" style="float: left; height: 80px; width: auto; margin-top: -8px; margin-right: 1rem;" alt="Add to Home screen">
+    <p style="margin-top: -3px; line-height: 1.3rem;">To install this Web App in your iPhone/iPad press <img src="assets/img/share.svg" style="display: inline-block; margin-top: 4px; margin-bottom: -4px; height: 20px; width: auto;" alt="Share"> and then Add to Home Screen.</p>
+  </div>
 </ion-content>
