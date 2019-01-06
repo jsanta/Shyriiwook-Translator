@@ -1,7 +1,7 @@
 import { SpeechApiService } from './../services/speech-api.service';
 import { MenuController } from '@ionic/angular';
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Params } from '@angular/router';
+import { ActivatedRoute, Params, Router } from '@angular/router';
 import { ShyriiwookPipe } from '../pipes/shyriiwook.pipe';
 
 @Component({
@@ -25,6 +25,7 @@ export class TranslatePage implements OnInit {
 
   constructor(
     public speechApiService: SpeechApiService,
+    private router: Router,
     private route: ActivatedRoute,
     private menu: MenuController,
     private shyriiwook: ShyriiwookPipe) { }
@@ -38,6 +39,9 @@ export class TranslatePage implements OnInit {
     this.settings = (this.settings) ? this.settings : {};
 
     console.log(this.settings);
+    if (!this.settings.voice) {
+      this.router.navigate(['config']);
+    }
 
     this.chewie = false;
   }
