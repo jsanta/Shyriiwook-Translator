@@ -1,0 +1,27 @@
+{
+  "index": "/chewie/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "resources": {
+        "files": [
+          "/chewie/favicon.ico",
+          "/chewie/index.html",
+          "/chewie/*.css",
+          "/chewie/*.js",
+          "/chewie/assets/splashscreen"
+        ]
+      }
+    }, {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "resources": {
+        "files": [
+          "/chewie/assets/**"
+        ]
+      }
+    }
+  ]
+}
