@@ -1,0 +1,48 @@
+{
+    "name": "Shyriiwook translator",
+    "short_name": "WookieLang",
+    "theme_color": "#000000",
+    "background_color": "#000000",
+    "display": "standalone",
+    "scope": "/chewie",
+    "start_url": "https://dev.santa.cl/chewie/index.html",
+    "icons": [{
+            "src": "https://dev.santa.cl/chewie/assets/icon/apple-touch-icon-72x72.png",
+            "sizes": "72x72",
+            "type": "image/png"
+        },
+        {
+            "src": "https://dev.santa.cl/chewie/assets/icon/apple-touch-icon-114x114.png",
+            "sizes": "114x114",
+            "type": "image/png"
+        },
+        {
+            "src": "https://dev.santa.cl/chewie/assets/icon/apple-touch-icon-120x120.png",
+            "sizes": "120x120",
+            "type": "image/png"
+        },
+        {
+            "src": "https://dev.santa.cl/chewie/assets/icon/apple-touch-icon-144x144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "https://dev.santa.cl/chewie/assets/icon/apple-touch-icon-152x152.png",
+            "sizes": "152x152",
+            "type": "image/png"
+        },
+        {
+            "src": "https://dev.santa.cl/chewie/assets/icon/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "https://dev.santa.cl/chewie/assets/icon/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "lang": "English",
+    "orientation": "portrait",
+    "description": "Shyriiwook translator, a Ionic PWA meant to translate and give a pronunciation reference for the translated text form English (or any other language) to Shyriiwook, the language spoken by all wookies, like Chewbacca."
+}
