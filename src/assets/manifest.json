@@ -1,10 +1,10 @@
 {
   "name": "Shyriiwook translator",
-  "short_name": "Shyriiwook translator",
+  "short_name": "Wookie Lang",
   "theme_color": "#000000",
   "background_color": "#000000",
   "display": "standalone",
-  "scope": "/",
+  "scope": "/chewie",
   "start_url": "/chewie/index.html",
   "icons": [
     {
