@@ -1,15 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);
 
-:host ::ng-deep {
-    scroll-y {
-        overflow: hidden!important;
-    }
-}
-
 :host {
 
-    height: 100%;
-    overflow: hidden;
     color: #ff6;
 
     font-family: "Droid Sans", arial, verdana, sans-serif;
@@ -18,7 +10,6 @@
 
     ion-content {
         background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%) !important;
-
     }
 
     .vertical-align-content>* {
@@ -32,11 +23,6 @@
         width: 90%;
         left: 5%;
         bottom: 15%;
-
-        // ion-row,
-        // ion-col {
-        //     width: 100%;
-        // }
     }
 
     ion-button {
@@ -47,7 +33,6 @@
     .ad2hs-prompt {
         background-color: rgb(59, 134, 196); /* Blue */
         border: none;
-        // display: none;
         color: white;
         padding: 15px 32px;
         text-align: center;
@@ -64,7 +49,6 @@
       .ios-prompt {
         background-color: #fcfcfc;
         border: 1px solid #666;
-        // display: none;
         padding: 0.8rem 1rem 0 0.5rem;
         text-decoration: none;
         font-size: 16px;
